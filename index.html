@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>CSG SUPPORT</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("Images/bg3.jpg");
+
+    /* Full height */
+    height: 98%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgLaunch {
+    /* The image used */
+    background-image: url("Images/cab4c932437055.5682ac94eecc6.gif");
+
+    /* Full height */
+    height: 98%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+</head>
+
+<body class="bg" >
+	<audio id="myAudio">
+  <source src="Images/tutari.mp3" type="audio/ogg">
+  <source src="Images/tutari.mp3" type="audio/mpeg">
+</audio>
+    <div style="background-image: url('Images/floatingflowers.gif');height:100%;width:100%;">  
+    <a class=" w3-animate-zoom" style="color: white;" onclick="playAudio()">
+        <img style="width: 10%;animation: animatezoom 2.2s;float:right;position:relative;margin-right:620px;top:475px;" src="./images/green-start-button-png-2.png ">
+    </a>
+    </div>
+    <script>
+var x = document.getElementById("myAudio"); 
+function playAudio() {
+	document.body.className = "bgLaunch"; 
+	x.play(); 
+	setTimeout(navigateToCSG, 6000);
+} 
+function navigateToCSG() {
+    window.location.href="http://pragaticmrcweb.maibasoft.com/";
+}
+</script>
+
+</body>
+
+</html>
