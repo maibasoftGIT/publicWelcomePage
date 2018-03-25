@@ -26,7 +26,7 @@ body, html {
 }
 .bgLaunch {
     /* The image used */
-    background-image: url("Images/cab4c932437055.5682ac94eecc6.gif");
+    background-image: url("Images/flowerBlast.gif");
 
     /* Full height */
     height: 98%; 
@@ -46,15 +46,16 @@ body, html {
 </audio>
     <div style="background-image: url('Images/floatingflowers.gif');height:100%;width:100%;">  
     <a class=" w3-animate-zoom" style="color: white;" onclick="playAudio()">
-        <img style="width: 10%;animation: animatezoom 2.2s;float:right;position:relative;margin-right:620px;top:475px;" src="./images/green-start-button-png-2.png ">
+        <img style="width: 10%;animation: animatezoom 2.2s;float:right;position:relative;margin-right:20px;top:495px;" 
+		src="./images/green-start-button-png-2.png ">
     </a>
     </div>
     <script>
 var x = document.getElementById("myAudio"); 
-function playAudio() {
+function playAudio() {  
 	document.body.className = "bgLaunch"; 
 	x.play(); 
-	setTimeout(navigateToCSG, 6000);
+	setTimeout(navigateToCSG, 7000);
 } 
 function navigateToCSG() {
     window.location.href="http://pragaticmrcweb.maibasoft.com/";
